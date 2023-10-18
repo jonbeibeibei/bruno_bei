@@ -81,7 +81,7 @@ class ScriptRuntime {
     const vm = new NodeVM({
       sandbox: context,
       require: {
-        context: 'sandbox',
+        context: 'host',
         external: true,
         root: [collectionPath],
         mock: {
